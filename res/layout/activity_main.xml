@@ -1,0 +1,78 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity" >
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="loginClick"
+            android:text="Login Button" />
+
+        <EditText
+            android:id="@+id/updateTextEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:ems="10"
+            android:hint="Enter status update" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/update_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updateTextEdit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:onClick="updateClick"
+            android:text="Update Status Button" />
+
+        <Button
+            android:id="@+id/get_tweets_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/update_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:onClick="gettweetsClick"
+            android:text="Get All Tweets" />
+
+        
+
+        <TextView
+            android:id="@+id/textViewAllTweets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/get_tweets_button"
+            android:layout_marginTop="28dp"
+            android:text="Tweets Come Here" />
+        
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewAllTweets"
+            android:onClick="logoutClick"
+            android:text="Logout Button" />
+    </RelativeLayout>
+
+</ScrollView>
